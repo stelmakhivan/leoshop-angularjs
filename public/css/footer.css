@@ -1,0 +1,154 @@
+.page-footer p,
+.page-footer span,
+.page-footer h3 {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.page-footer .footer-btns {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    padding: 20px;
+    color: #4cb1ca;
+}
+
+.page-footer .footer-btns:hover {
+    text-decoration: none;
+    color: #2f7b90;
+}
+
+.page-footer .blue {
+    color: #bef2ff;
+}
+
+.footer-top .wrapper,
+.footer-middle .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.footer-top .shipping,
+.footer-top .call {
+    width: 47%;
+}
+
+.footer-top {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #4cb1ca;
+}
+
+.footer-top span {
+    text-transform: uppercase;
+    font-size: 21px;
+    margin-left: 15px;
+}
+
+.footer-middle {
+    padding-top: 45px;
+    padding-bottom: 55px;
+    background-color: #39a0b9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-middle section {
+    width: 23%;
+}
+
+.footer-middle h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-middle p,
+.footer-middle span {
+    font-size: 13px;
+    font-family: "Open Sans Light", sans-serif;
+}
+
+.footer-middle .like {
+    background-color: #eceef5;
+    color: #39a0b9;
+    opacity: 0.8;
+}
+
+.footer-middle .like:hover {
+    background-color: white;
+    color: #2F8098;
+    opacity: 1;
+}
+
+.footer-middle__photos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.footer-middle__photos .fb_photo {
+    padding-bottom: 10px;
+}
+
+.footer-middle .footer-btns {
+    padding: 15px;
+    width: 48px;
+    height: 48px;
+}
+
+.footer-middle .from-twitter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.footer-middle section p {
+    line-height: 1.8;
+}
+
+.footer-middle .soc-btns {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.footer-middle .from-twitter span {
+    margin-left: 10px;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0b4b5a;
+    color: #8adcf0;
+    display: flex;
+    font-size: 13px;
+}
+
+.footer-right nav a {
+    color: #8adcf0;
+    border-right: 1px solid #8adcf0;
+}
+
+.footer-right nav a:hover {
+    text-decoration: none;
+}
+
+.footer-bottom .wrapper {
+    display: flex;
+}

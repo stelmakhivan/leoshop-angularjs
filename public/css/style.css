@@ -1,0 +1,21 @@
+a {
+    color: white;
+}
+
+a:focus,
+a:active,
+a:visited,
+a:hover {
+    outline: none;
+    outline-offset: 0;
+    cursor: pointer;
+}
+
+.blue {
+    color: #bef2ff;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+

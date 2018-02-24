@@ -1,0 +1,88 @@
+<div class="modal fade" id="form_enter">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <div class="form-body">
+                <ul class="nav nav-tabs final-login">
+                    <li id="login-tab"><a data-toggle="tab" href="#sectionA">Log In</a></li>
+                    <li id="sign-tab"><a data-toggle="tab" href="#sectionB">Sign Up</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="sectionA" class="tab-pane fade in active">
+                        <div class="innter-form">
+                            <form name="loginForm" class="sa-innate-form" method="post" novalidate>
+                                <label>Login</label>
+                                <input class="form-control" type="text" name="login" placeholder="Enter your email" ng-model="login"  required>
+                                <div class="text-danger" ng-show="loginForm.login.$touched && loginForm.login.$invalid">
+                                    {{getError(loginForm.login.$error)}}
+                                </div>
+                                <label>Password</label>
+                                <input class="form-control" type="password" name="password" placeholder="Enter your password" ng-model="password" required>
+                                <div class="text-danger" ng-show="loginForm.password.$touched && loginForm.password.$invalid">
+                                    {{getError(loginForm.password.$error)}}
+                                </div>
+                                <button type="submit" class="btn" ng-disabled="loginForm.$invalid" ng-click="check()">Log In</button>
+                                <a ng-click="forget()">Forget Password?</a>
+                            </form>
+                        </div>
+                        <div class="social-login">
+                            <p>- - - - - - - - - - - - - Log In With - - - - - - - - - - - - - </p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i> Google+</a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="sectionB" class="tab-pane fade">
+                        <div class="innter-form">
+                            <form name="signForm" class="sa-innate-form" method="post" novalidate>
+                                <label>Login</label>
+                                <input class="form-control" type="text" name="newLogin" placeholder="Enter your name" ng-model="newLogin" ng-minlength="2" ng-maxlength="15" ng-pattern="matchPattern" required>
+                                <div class="text-danger" ng-show="signForm.newLogin.$touched && signForm.newLogin.$invalid">
+                                    {{getError(signForm.newLogin.$error)}}
+                                </div>
+                                <label>Email Address</label>
+                                <input class="form-control" type="email" name="newMail" placeholder="Enter your email" ng-model="newMail" required>
+                                <div class="text-danger" ng-show="signForm.newMail.$touched && signForm.newMail.$invalid">
+                                    {{getError(signForm.newMail.$error)}}
+                                </div>
+                                <label>Password</label>
+                                <input class="form-control" type="password" name="newPassword" placeholder="Enter your password" ng-model="newPassword" required>
+                                <div class="text-danger" ng-show="signForm.newPassword.$touched && signForm.newPassword.$invalid">
+                                    {{getError(signForm.newPassword.$error)}}
+                                </div>
+                                <label>Phone Number</label>
+                                <div class="phoneNumber">
+                                    <input class="form-control col-lg-8" type="text" name="newPhone" maxlength="13" placeholder="" ng-model="newPhone" ng-pattern="phonePattern" required>
+                                    <input type="button" class="btn btn-success col-lg-4" ng-click="verification()" name="Verificate" value="Verificate">
+                                </div>
+                                <div class="text-danger" ng-show="signForm.newPhone.$touched && signForm.newPhone.$invalid">
+                                    {{getErrorPhone(signForm.newPhone.$error)}}
+                                </div>
+                                <label>Ver Code</label>
+                                <input  class="form-control" type="text" ng-model="newVerCode" name="newVerCode" maxlength="4" placeholder="Enter Ver Code" required>
+                                <div class="text-danger" ng-show="signForm.newVerCode.$touched && signForm.newVerCode.$invalid">
+                                    {{getError(signForm.newVerCode.$error)}}
+                                </div>
+                                <button type="submit" class="btn" ng-disabled="signForm.$invalid" ng-click="registration()">Sign Up</button>
+                                <p>By clicking Join now, you agree to hifriends's User Agreement, Privacy Policy, and
+                                    Cookie Policy.</p>
+                            </form>
+                        </div>
+                        <div class="social-login">
+                            <p>- - - - - - - - - - - - - Register With - - - - - - - - - - - - - </p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i> Google+</a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

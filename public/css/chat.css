@@ -1,0 +1,153 @@
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.chat-block .clearfix:before, .chat-block .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.chat-block .clearfix:after {
+    clear: both;
+}
+
+.chat-block header {
+    background: #4cb1ca;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.chat-block h4:before {
+    background: #1a8a34;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 8px;
+    margin: 0 8px 0 0;
+    width: 8px;
+}
+
+.chat-block h4 {
+    font-size: 12px;
+}
+
+.chat-block h5 {
+    font-size: 10px;
+    margin-top: 15px;
+}
+.chat-block p{
+    margin-top: 5px;
+}
+.chat-block form {
+    padding: 24px 10px;
+}
+
+.chat-block input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px;
+    outline: none;
+    width: 79%;
+    box-shadow: 2px 2px 2px gray;
+    margin-right: 10px;
+}
+.chat-block input[type="text"]:focus {
+    border: 1px solid #7db122;
+}
+
+.chat-close {
+    background: #1b2126;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 10px;
+    height: 16px;
+    line-height: 16px;
+    margin: 7px 0 0 0;
+    text-align: center;
+    width: 16px;
+}
+.chat-close:hover {
+    text-decoration: none;
+    color: red;
+    background-color: white;
+}
+
+.chat {
+    background: #fff;
+}
+
+.chat-history {
+    height: 252px;
+    padding: 8px 10px;
+    overflow-y: scroll;
+}
+
+.chat-message {
+    margin: 5px 0;
+    background: #4cb1ca;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    width: 70%;
+    clear: both;
+}
+
+.chat-message img {
+    border-radius: 50%;
+    float: left;
+}
+
+.chat-message-content {
+    margin-left: 40px;
+}
+
+.chat-time {
+    float: right;
+    font-size: 10px;
+}
+
+.chat-feedback {
+    font-style: italic;
+    margin: 20px 0 0 80px;
+    display: none;
+}
+.chat-block {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    width: 370px;
+    border: 1px solid rgba(133,133,133,.5);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.chat-show {
+    display: block;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #4cb1ca;
+    color: white;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9998;
+    text-align: center;
+    line-height: 60px;
+    vertical-align: middle;
+}
+.chat-show:hover,
+.chat-show:active,
+.chat-show:focus,
+.chat-show:visited {
+    text-decoration: none;
+}
+.my-message {
+    background: #1a8a34;
+    float: right;
+}

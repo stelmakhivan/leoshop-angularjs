@@ -1,0 +1,138 @@
+<main class="main-content">
+    <section class="items">
+        <form class="navbar-form main-search__form">
+            <div class="input-group has-feedback">
+                <input type="text" class="form-control" placeholder="Search" ng-model="search">
+                <span class="form-control-feedback">
+                     <i class="fa fa-search"></i>
+                </span>
+            </div>
+            <a href="#" class="green"><i class="fa fa-tags" aria-hidden="true"></i></a>
+            <a href="#" class="green"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a href="#" class="main_cart">cart <span>(0)</span></a>
+        </form>
+        <h1>featured products</h1>
+        <div class="catalog">
+            <article class="product" data-ng-init="getItems()"
+                     ng-repeat="item in items | filter : {name:search} | offset: currentPage * itemsPerPage | limitTo: itemsPerPage">
+                <div ng-if="item.new">
+                    <div class="new">new</div>
+                </div>
+                <div ng-if="item.sale">
+                    <div class="sale">sale</div>
+                </div>
+                <div class="box">
+                    <a href="#" class="photo">
+                        <img ng-src="{{item.imgSrc}}" alt="">
+                    </a>
+                    <div class="details">
+                        <h2 class="title">{{item.name}}</h2>
+                        <span ng-if="item.sale" class="old-price">{{item.oldprice}}</span>
+                        <span class="price">${{item.price}}</span>
+                        <a href="#" class="add-to-cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!--<div class="pagination-wrapper"></div>-->
+        <ul class="pagination pagination-wrapper">
+            <li ng-class="prevPageDisabled()">
+                <a href ng-click="prevPage()">«</a>
+            </li>
+            <li ng-repeat="n in range()" ng-class="{active: n == currentPage}" ng-click="setPage(n)">
+                <a href="#">{{n+1}}</a>
+            </li>
+            <li ng-class="nextPageDisabled()">
+                <a href ng-click="nextPage()">»</a>
+            </li>
+        </ul>
+        <h1>sale products</h1>
+        <div class="catalog">
+            <article class="product" ng-repeat="item in items" ng-if="item.sale">
+                <div ng-if="item.new">
+                    <div class="new">new</div>
+                </div>
+                <div ng-if="item.sale">
+                    <div class="sale">sale</div>
+                </div>
+                <div class="box">
+                    <a href="#" class="photo">
+                        <img ng-src="{{item.imgSrc}}" alt="">
+                    </a>
+                    <div class="details">
+                        <h2 class="title">{{item.name}}</h2>
+                        <span ng-if="item.sale" class="old-price">{{item.oldprice}}</span>
+                        <span class="price">${{item.price}}</span>
+                        <a href="#" class="add-to-cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <h1>new products</h1>
+        <div class="catalog">
+            <article class="product" ng-repeat="item in items track by $index" ng-if="item.new">
+                <div ng-if="item.new">
+                    <div class="new">new</div>
+                </div>
+                <div ng-if="item.sale">
+                    <div class="sale">sale</div>
+                </div>
+                <div class="box">
+                    <a href="#" class="photo">
+                        <img ng-src="{{item.imgSrc}}" alt="">
+                    </a>
+                    <div class="details">
+                        <h2 class="title">{{item.name}}</h2>
+                        <span ng-if="item.sale" class="old-price">{{item.oldprice}}</span>
+                        <span class="price">${{item.price}}</span>
+                        <a href="#" class="add-to-cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <aside class="sidebar">
+        <div class="swiper-container aside-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/sidebar1.jpg" alt=""><a href="#" class="btn slider-btn">Check
+                    It
+                    Out</a></div>
+                <div class="swiper-slide"><img src="../img/sidebar2.jpg" alt=""><a href="#" class="btn slider-btn">Check
+                    It
+                    Out</a></div>
+                <div class="swiper-slide"><img src="../img/sidebar3.jpg" alt=""><a href="#" class="btn slider-btn">Check
+                    It
+                    Out</a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div ng-show="isAdmin">
+            <div class="addItemField">
+                <div class="headAddItemsBlock">
+                    <h1>New Item</h1>
+                </div>
+                <div class="newItemBlock">
+                    <form role="form" name="newItemForm" novalidate>
+                        <input type="text" class="form-control" type="text" ng-model="nameOfNewItem" placeholder="Name" required><br>
+                        <input type="text" class="form-control" type="text" ng-model="priceOfNewItem" placeholder="Price" required><br>
+                        <textarea ng-model="aboutNewItem" class="form-control" type="text" placeholder="About Item" required></textarea><br>
+                        <label class="uploadbutton">
+                            <div class="button">Upload</div>
+                            <input type="file" file-model="myFile">
+                        </label><br>
+                        <button type="button" class="btn btn-labeled btn-success" ng-click="addNewItem(fileOfNewItem)"
+                                ng-disabled="newItemForm.$invalid"><span class="btn-label"><i
+                                class="fa fa-check"></i></span>Create
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+</main>

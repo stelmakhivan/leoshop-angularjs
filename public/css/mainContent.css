@@ -1,0 +1,220 @@
+.main-content {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-search__form {
+    padding: 0;
+    margin-bottom: 20px;
+}
+.main-search__form a {
+    color: #656565;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main-search__form .navbar-brand {
+    font-size: 36px;
+    padding-left: 0;
+}
+
+.navbar-form .green {
+    display: inline-flex;
+    background-color: #7db122;
+    border-radius: 50%;
+    padding: 9px;
+    color: white;
+    font-size: 13px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.sidebar {
+    margin-left: 25px;
+    max-width: 236px;
+}
+
+/*Aside-slider*/
+.sidebar .swiper-slide {
+    height: 411px;
+}
+
+.sidebar .aside-slider {
+    height: 460px;
+    border-top: 3px solid #4cb1ca;
+    padding-top: 10px;
+}
+
+.swiper-container-horizontal .swiper-pagination {
+    position: relative;
+    bottom: 30px;
+    border-bottom: 3px solid #4cb1ca;
+    padding-bottom: 5px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background: #7db122;
+    opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets
+.swiper-pagination-bullet-active {
+    background: #4cb1ca;
+}
+
+.sidebar .slider-btn {
+    background: #4cb1ca;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+/*Aside-slider*/
+.items {
+    max-width: 764px;
+}
+
+.items h1 {
+    margin-top: 0;
+}
+
+.items h1, .items h2 {
+    color: #635f57;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.items h2 {
+    text-transform: none;
+    font-size: 14px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.catalog .product {
+    position: relative;
+    display: block;
+    width: 30%;
+    margin-top: 28px;
+    padding: 8px;
+    border: 1px solid #eaeaea;
+    box-shadow: 1px -2px 5px gray;
+    overflow: hidden;
+    margin-right: 22px;
+}
+
+.catalog .product .box {
+    position: relative;
+    overflow: hidden;
+}
+
+.catalog .product .new,
+.catalog .product .sale {
+    position: absolute;
+    right: -45px;
+    top: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open Sans Semibold', sans-serif;
+    font-size: 15px;
+    background: #4cb1ca;
+    transform: rotate(43deg);
+    padding: 10px 35px;
+    z-index: 20;
+    text-align: center;
+}
+
+.catalog .product .new {
+    box-shadow: 2px 2px 8px #368293;
+    width: 200px;
+    top: 25px;
+    right: -50px;
+}
+
+.catalog .product .sale {
+    left: -80%;
+    top: 6%;
+    text-align: center;
+    background: #7db122;
+    transform: rotate(-43deg);
+    box-shadow: 2px 2px 8px #228504;
+}
+
+.catalog .product .photo {
+    display: flex;
+    background-color: #eff1f0;
+    height: 228px;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog .product .title {
+    font-size: 14px;
+    color: #464148;
+}
+
+.catalog .product .details {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.catalog .product .price,
+.catalog .product .old-price {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #7db122;
+}
+
+.catalog .product .old-price {
+    color: #464148;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.catalog .product .add-to-cart {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #7db122;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.catalog .product .add-to-cart:hover,
+.catalog .product .add-to-cart:active,
+.catalog .product .add-to-cart:visited {
+    text-decoration: none;
+}
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.headAddItemsBlock h1{
+    color: #635f57;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}

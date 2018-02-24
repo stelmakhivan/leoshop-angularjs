@@ -1,0 +1,36 @@
+<div class="chat-block">
+    <header class="clearfix" ng-click="hideChat()">
+        <a href="#" class="chat-close" ng-click="closeChat()">x</a>
+        <h4>Chat</h4>
+    </header>
+    <div class="chat">
+        <div class="chat-history">
+            <!--<div class="chat-message clearfix">-->
+                <!--<img src="http://gravatar.com/avatar/2c0ad52fc5943b78d6abe069cc08f320?s=32" alt="" width="32" height="32">-->
+                <!--<div class="chat-message-content clearfix">-->
+                    <!--<span class="chat-time" ng-bind="date | date:'HH:mm'"></span>-->
+                    <!--<h5>Admin</h5>-->
+                    <!--<p>Hello!</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<hr>-->
+            <div ng-repeat="m in messages track by $index">
+            <div class="chat-message clearfix" ng-class="{ 'my-message' : m.name == userSuccess}">
+                <img ng-src="{{m.name !== 'admin' ? 'https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png' : 'http://gravatar.com/avatar/2c0ad52fc5943b78d6abe069cc08f320?s=32'}}"  alt="User" width="32" height="32">
+                <div class="chat-message-content clearfix">
+                    <span class="chat-time">{{m.time}}</span>
+                    <h5>{{m.name}}</h5>
+                    <p>{{m.txt}}</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <p class="chat-feedback">Your partner is typing…</p>
+        <form name="chatForm">
+            <fieldset>
+                <input type="text" my-enter="start()" ng-model="enterText" placeholder="Type your message…" class="input-msg">
+                <input type="button" ng-click="start()" value="Send" class="btn btn-success">
+            </fieldset>
+        </form>
+    </div>
+</div>

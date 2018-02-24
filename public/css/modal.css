@@ -1,0 +1,205 @@
+/*Form Registration*/
+.form-body {
+    background: #fff;
+    padding: 20px;
+    clear: both;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-top: 3px solid #3e4043;
+}
+
+.innter-form {
+    padding-top: 20px;
+}
+
+.final-login li {
+    width: 50%;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs > li {
+    color: #222;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #fff;
+    background-color: #d14d42;
+    border: none;
+    border-bottom-color: transparent;
+    border-radius: 0;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.428571429;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.social-login {
+    text-align: center;
+    font-size: 12px;
+}
+
+.social-login p {
+    margin: 15px 0;
+}
+
+.social-login ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.social-login ul li {
+    width: 33.3%;
+}
+
+.social-login ul li a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+.social-login ul li:nth-child(1) a {
+    background: #3b5998;
+}
+
+.social-login ul li:nth-child(2) a {
+    background: #e74c3d;
+}
+
+.social-login ul li:nth-child(3) a {
+    background: #3698d9;
+}
+
+.sa-innate-form input[type=text], input[type=password],
+input[type=file], textarea, select, .sa-innate-form input[type=email] {
+    font-size: 13px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+    margin: 8px 0;
+
+}
+
+.sa-innate-form input[type=submit] {
+    border: 1px solid #e64b3b;
+    background: #e64b3b;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.sa-innate-form input[type=submit]:hover {
+    border: 1px solid #db3b2b;
+    background: #db3b2b;
+    color: #fff;
+}
+
+.sa-innate-form button {
+    border: 1px solid #e64b3b;
+    background: #e64b3b;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.sa-innate-form button:hover {
+    border: 1px solid #db3b2b;
+    background: #db3b2b;
+    color: #fff;
+}
+
+.sa-innate-form p {
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.modal-dialog {
+    margin-top: 162px;
+}
+
+.close {
+    position: absolute;
+    top: -22px;
+    right: -22px;
+
+}
+
+.close span {
+    display: inline-block;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+}
+
+.modal-dialog a {
+    color: black;
+}
+form .ng-invalid-email,
+form .ng-invalid-password,
+form .ng-invalid{
+    border: 1px solid #db3b2b !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #db3b2b;
+}
+form .ng-valid.ng-dirty {
+    border: 1px solid #7db122 !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #7db122;
+}
+.text-danger {
+    margin-bottom: 15px;
+}
+.phoneNumber {
+    display: flex;
+    justify-content: space-between;
+}
+.phoneNumber input[name="newPhone"] {
+    min-width: 30%;
+    max-width: 60%;
+    margin-right: 20px;
+}
+.phoneNumber input[name="Verificate"]{
+    margin: 8px 0;
+    min-width: 10%;
+}
+.ngdialog-content h1,
+.ngdialog-content h3{
+    text-align: center;
+    color: #7db122;
+}
+.ngdialog-content {
+    z-index: 10001;
+}
+.modal-open{
+    width:100%!important;
+    padding-right:0!important;
+    padding-left:0!important;
+    overflow-y:scroll!important;
+    position:fixed!important;
+}
+.modal-open .modal {
+    overflow-y: visible;
+}
+body.ngdialog-open,
+html.ngdialog-open{
+    overflow: visible;
+}
+/*Form Registration*/
