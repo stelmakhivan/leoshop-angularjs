@@ -364,8 +364,14 @@ app.directive("maincontentBlock", function () {
                 // pagination
                 $scope.currentPage = 0;
                 $scope.itemsPerPage = 9;
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    $scope.itemsPerPage = 8;
+                }
+                if (window.matchMedia("(max-width: 480px)").matches) {
+                    $scope.itemsPerPage = 5;
+                }
                 $scope.range = function () {
-                    let rangeSize = Math.floor($scope.items.length / 9);
+                    let rangeSize = Math.floor($scope.items.length / $scope.itemsPerPage);
                     let ret = [];
                     let start;
 
