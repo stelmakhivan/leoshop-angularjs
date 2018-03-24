@@ -1,10 +1,6 @@
--- MySQL dump 10.13  Distrib 5.6.23, for Win32 (x86)
---
--- Host: localhost    Database: komora
--- ------------------------------------------------------
--- Server version	5.7.20-log
-create database komora
-use komora
+
+create database komora;
+use komora;
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
